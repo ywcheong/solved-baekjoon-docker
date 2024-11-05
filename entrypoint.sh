@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# Check if the project directory is empty
-if [ -z "$(ls -A /work)" ]; then
+# MAKE SURE THAT THIS FILE HAS LF-style LINE ENDING !!!
+# OR THIS FILE WILL NOT WORK
+
+# Check if the project directory is empty 
+if [ -z "$(ls -A /root/work)" ]; then
     echo "First-time setup: Configuring Git and cloning repository."
 
     chmod 600 ~/.ssh/id_rsa
